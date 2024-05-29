@@ -18,8 +18,3 @@ jobs:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: git push https://raul:$HF_TOKEN@huggingface.co/spaces/raul-martin-dev/open_metaprompt main
         
-      - name: Push to GitHub
-        run: |
-          git pull
-          git push origin main
-        
