@@ -1,4 +1,4 @@
-name: Sync to Hugging Face hub
+name: Sync to Hugging Face hub and GitHub
 on:
   push:
     branches: [main]
@@ -17,3 +17,7 @@ jobs:
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: git push https://raul:$HF_TOKEN@huggingface.co/spaces/raul-martin-dev/open_metaprompt main
+        
+      - name: Push to GitHub
+        run: git push origin main
+        
