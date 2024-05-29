@@ -1,0 +1,8 @@
+text-generation 
+transformers
+langchain
+langchainhub 
+langchain_community
+sentencepiece 
+jinja2 
+streamlit_auth0
