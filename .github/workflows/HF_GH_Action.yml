@@ -19,5 +19,7 @@ jobs:
         run: git push https://raul:$HF_TOKEN@huggingface.co/spaces/raul-martin-dev/open_metaprompt main
         
       - name: Push to GitHub
-        run: git push origin main
+        run: |
+          git pull
+          git push origin main
         
